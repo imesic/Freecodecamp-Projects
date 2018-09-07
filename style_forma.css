@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css?family=Do+Hyeon');
+
+html,body {
+    font-family: 'Do Hyeon', sans-serif;
+      
+}
+
+#title {
+    padding: 25px;
+    text-align: center;
+}
+
+#description {
+    font-size: 30px;
+    text-align: center;
+
+}
+
+#glavni_okvir {
+    background-color: #e00;
+    background-size: 100%, auto;
+    margin: 60px;
+    padding: 20px;
+    border-radius: 14px; 
+  }
+
+#survey-form {
+    width: 100%;
+    background-color: #c9c9c9;
+    display: grid;
+    grid-template-areas: 
+        'item1 item1 item2 item2 item3 item3'
+        'item4 item4 item4 item4 item4 item4'
+        '. . item5 item5 . .';
+    grid-gap: 15px;
+    border-radius: 7px;
+    border: 3px solid #ffd0d0;
+}
+
+.register_Row {
+    grid-area: item1;
+}
+
+.radio_Row {
+    grid-area: item2;
+}
+
+.checkbox_Row {
+    grid-area: item3;
+}
+
+.text_Row {
+    grid-area: item4;
+    width: auto;
+}
+
+.gumb_Sub {
+    grid-area: item5;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#komentari {
+    width: 50%;
+    height: 150px;
+}
+
+#number {
+    width: 40%;
+}
+
+#submit {
+    width: 50%;
+    background: whitesmoke;
+    border-radius: 30px;
+    border-color: #e00;
+    height: 60px;
+    font-family: 'Do Hyeon', sans-serif;
+    font-size: 12pt;
+}
+
+.oznake {
+    margin: 10px 0 3px 10px;
+}
+
+.desna-kartica {
+    margin-left: 10px;
+}
+
+.polje-za-unos {
+    border-radius: 5px;
+}
+
+@media (max-width: 900px) {
+    #survey-form {
+        grid-template-areas: 
+        'item1 item1 . .'
+        'item2 item2 item3 item3'
+        'item4 item4 item5 item5';
+    }
+}

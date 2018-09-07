@@ -1,0 +1,229 @@
+html {
+    background-image: linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(45deg, black 25%, transparent 25%, transparent 75%, black 75%, black), linear-gradient(to bottom, rgb(8, 8, 8), rgb(32, 32, 32));
+    background-size: 10px 10px, 10px 10px, 10px 5px;
+    background-position: 0px 0px, 5px 5px, 0px 0px;
+}
+
+body {
+    padding: 0% 12%;
+}
+
+/*HEADER*/
+#header {
+    background-color: rgb(56, 53, 53);
+    width: 100%;
+    height: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#logo {
+    padding: 10px;
+}
+
+#header-img {
+    width: 30%;
+    height: 70%;
+    border-radius: 4px;
+}
+
+#nav-bar {
+    width: 60%;
+    margin: auto;
+    margin-right: 15px;
+}
+
+.styled-list {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: transparent;
+    float: right;
+}
+
+.styled-list-menu {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgb(202, 207, 57);
+    color: black;
+}
+
+
+/*container*/
+
+.container {
+    background-color: #cacacca1;
+    margin-top: 120px;
+}
+
+.banner {
+    max-height: auto;
+}
+
+.img-container {
+    width:100%;
+    height:100%;
+    background-repeat:no-repeat;
+    background-size:cover;
+    border-top: 2px solid rgb(225, 231, 46);
+    border-bottom: 2px solid rgb(225, 231, 46);
+}
+
+#description {
+    padding: 10% 15% 4% 15%;
+    border-bottom: 2px solid rgb(225, 231, 46);
+}
+
+h2 {
+    font-family: 'Nunito Sans', sans-serif;
+    margin-bottom: 20px;
+    padding: auto;
+}
+
+h3 {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+p {
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+#production {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+#video {
+    width: 100%;
+    max-width: 560px;
+    height: 400px;
+}
+
+#models {
+    margin-top: 30px;
+    min-height: 200px;
+    width: 100%;
+    
+}
+
+.feet {
+    text-align: center;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 10px;
+}
+
+.kontakt-blok {
+    display: flex;
+    justify-content: center;
+}
+
+.kontakt-Glavni-naslov {
+    font-size: 16pt;
+}
+
+.kontakt-Glavni-naslov p {
+    padding-top: 35px;
+}
+
+.kontakt-Podnaslov {
+    font-size: 9pt;
+    text-align: center;
+}
+
+.kontakt-blok {
+    padding-top: 40px;
+    padding-bottom: 25px; 
+}
+
+.email-blok {
+    display: flex;
+    justify-content: center;
+}
+
+#email {
+    width: 65%;
+    height: 35px;
+}
+
+#submit {
+    width: 15%;
+    background-color: rgb(225, 231, 46);
+    
+}
+
+/*FOOTER*/
+
+.footer-inner {
+    padding-top: 7%;
+    padding-bottom: 12%
+}
+
+.footer-sections {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-items: center;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: white;
+}
+
+.footer-block-title {
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+}
+
+.footer-nav-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-nav-list p {
+    font-family: 'Nunito Sans', sans-serif;
+    color: white;
+    margin: 0;
+}
+
+/*Responsive query*/
+
+@media (max-width: 600px) {
+    p {
+     font-size: 10pt;
+    }
+
+    h2 {
+    font-size: 12pt;
+    }
+}
+
+
+@media (min-width: 650px) {
+    #models {
+        margin-top: 30px;
+        min-height: 200px;
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}

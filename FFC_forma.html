@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style_forma.css" />
+    <script src="main.js"></script>
+</head>
+<body>
+    <h1 id="title">Formula 1 Quiz</h1>
+    <div id="glavni_okvir">
+        <p id="description">
+            Let's see how good you are
+        </p>
+        <form id="survey-form">
+            <div class="register_Row">
+                <div class="oznake">
+                    <label id="name-label" for="name">*First Name: </label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="text" name="firstname" id="name" class="polje-za-unos" autofocus placeholder="Please enter your first name" required>
+                </div>
+                <div class="oznake">
+                    <label id="lastname-label" for="lname">*Last Name:</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="text" name="lastname" id="lname" class="polje-za-unos" placeholder="Please enter your last name" required>
+                </div>
+                <div class="oznake">
+                    <label id="email-label" for="email">*E-mail</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="email" name="email" id="email" class="polje-za-unos" placeholder="Please enter your email" required>
+                </div>
+                <div class="oznake">
+                    <label id="number-label" for="age">*Age</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="number" name="age" id="number" min="1" max="110" class="polje-za-unos" placeholder="Please enter your age" required>
+                </div>
+                <div class="oznake">
+                    <label for="razina-znanja">How do you describe your Formula 1 knowledge ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <select id="dropdown" name="razina-znanja">
+                        <option value="beginner">Beginner</option>
+                        <option value="novice">Novice</option>
+                        <option value="i_know_something">I know something</option>
+                        <option value="racing engineer">Racing engineer</option>
+                    </select>
+                </div>
+            </div>
+            <div class="radio_Row">
+                <div class="oznake">
+                    <label for="pitanja">Which driver leads by winning titles ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="radio" name="pitanje_za_prvaka" value="AayrtonSenna"> Ayrton Senna<br>
+                    <input type="radio" name="pitanje_za_prvaka" value="JuanManuel Fangio"> Juan Manuel Fangio<br>
+                    <input type="radio" name="pitanje_za_prvaka" value="MichaelSchumacher">  Michael Schumacher<br>
+                    <input type="radio" name="pitanje_za_prvaka" value="LewisHamilton"> Lewis Hamilton<br>
+                    <input type="radio" name="pitanje_za_prvaka" value="JackieStewart"> Jackie Stewart
+                </div>
+                <div class="oznake">
+                    <label for="pitanja">Which driver leads by pole positions ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="radio" name="pitanje_za_pole" value="MikaHäkkinen"> Mika Häkkinen<br>
+                    <input type="radio" name="pitanje_za_pole" value="MichaelSchumacher"> Michael Schumacher<br>
+                    <input type="radio" name="pitanje_za_pole" value="AlainProst"> Alain Prost<br>
+                    <input type="radio" name="pitanje_za_pole" value="LewisHamilton"> Lewis Hamilton<br>
+                    <input type="radio" name="pitanje_za_pole" value="JimClark"> Jim Clark
+                </div>
+                <div class="oznake">
+                    <label for="pitanja">What season was the last one for Michael Schumacher ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="radio" name="schumacher_season" value="2011"> 2011<br>
+                    <input type="radio" name="schumacher_season" value="2009"> 2009<br>
+                    <input type="radio" name="schumacher_season" value="2010"> 2010<br>
+                    <input type="radio" name="schumacher_season" value="2006"> 2006<br>
+                    <input type="radio" name="schumacher_season" value="2012"> 2012
+                </div>
+            </div>
+            <div class="checkbox_Row">
+                <div class="oznake">
+                    <label for="pitanja">Which of these drivers has more than two winning championships ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="checkbox" name="two_championships" value="1"> Mika Häkkinen<br>
+                    <input type="checkbox" name="two_championships" value="2"> Fenando Alonso<br>
+                    <input type="checkbox" name="two_championships" value="3"> Ayrton Senna<br>
+                    <input type="checkbox" name="two_championships" value="4"> Juan Manuel Fangio<br>
+                    <input type="checkbox" name="two_championships" value="5"> Michael Schumacher
+                </div>
+                <div class="oznake">
+                    <label for="pitanja">Which of these drivers did not win at the Grand Prix of Monaco ?</label>
+                </div>
+                <div class="desna-kartica">
+                    <input type="checkbox" name="not_won_monaco" value="1"> Rubens Barrichello<br>
+                    <input type="checkbox" name="not_won_monaco" value="2"> Felippe Massa<br>
+                    <input type="checkbox" name="not_won_monaco" value="3"> Ayrton Senna<br>
+                    <input type="checkbox" name="not_won_monaco" value="4"> Juan Manuel Fangio<br>
+                    <input type="checkbox" name="not_won_monaco" value="5"> Michael Schumacher
+                </div>
+            </div>
+            <div class="text_Row">
+                <div class="oznake">
+                    <label for="komentari">Write few words how we can improve our quiz</label>
+                </div>
+                <div class="desna-kartica">
+                    <textarea id="komentari" class="polje-za-unos" name="comment" placeholder="Enter your text here..."></textarea>
+                </div>
+            </div>
+            <div class="gumb_Sub">
+                <button id="submit" type="submit" form="survey-form" value="Submit">Submit ►</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
